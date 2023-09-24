@@ -12,9 +12,7 @@ class GiftCalculatorTest {
     @Test
     @DisplayName("Must balance gifts")
     void mustBalanceGifts(){
-        int resultOfComparingSides= 5;
         GiftCalculator calculator= new GiftCalculator();
-        assertThat(calculator.checksBalance(resultOfComparingSides)).isTrue();
+        assertThat(calculator.checksBalance(5)).isTrue();
     }
-
 }
